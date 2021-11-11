@@ -1,0 +1,68 @@
+.product-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sitebar {
+  margin: 5rem 1rem;
+  width: 25rem;
+  height: auto;
+  overflow-y: none;
+}
+
+.shoes-container-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.shoes-items {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+  /* justify-content: space-between; */
+}
+
+.shoes-card {
+  margin: 5rem 1rem 0rem 1rem;
+  /* margin: 2rem; */
+}
+
+.shoes-card > img {
+  width: 20rem;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 750px) {
+  .sitebar {
+    display: none;
+  }
+  .shoes-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .shoes-container-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .shoes-card > img {
+    width: 90vw;
+    object-fit: cover;
+  }
+}

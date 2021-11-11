@@ -1,0 +1,21 @@
+.about-items {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.about-items > div {
+  width: 40rem;
+  margin: 2rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .about-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-items > div {
+    width: 40rem;
+    margin: 1rem;
+  }
+}
